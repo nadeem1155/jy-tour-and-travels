@@ -69,7 +69,7 @@ $pdo = get_db_connection();
 if ($pdo) {
     try {
         $stmt = $pdo->prepare("INSERT INTO contact_messages (full_name, phone, email, subject, message, status, ip_address, created_at)
-                                VALUES (:full_name, :phone, :email, :subject, :message, 'New', :ip_address, NOW())");
+                                VALUES (:full_name, :phone, :email, :subject, :message, 'New', :ip_address, CURRENT_TIMESTAMP)");
         $stmt->execute([
             ':full_name'  => $fullName,
             ':phone'      => $phone,

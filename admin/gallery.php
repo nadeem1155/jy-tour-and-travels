@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if (!empty($title)) {
                 $stmt = $pdo->prepare("INSERT INTO gallery (title, category, image_url, caption, display_order, is_featured, created_at)
-                                        VALUES (:t, :c, :i, :cap, :o, 1, NOW())");
+                                        VALUES (:t, :c, :i, :cap, :o, 1, CURRENT_TIMESTAMP)");
                 $stmt->execute([':t' => $title, ':c' => $category, ':i' => $imageUrl, ':cap' => $caption, ':o' => $order]);
                 set_flash('success', "Image '{$title}' added to gallery.");
             }

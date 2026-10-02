@@ -94,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         ) VALUES (
                                             :cid, :name, :slug, :cname, :tagline,
                                             :img, :pass, :lug, :ac, :fuel, :price, 1,
-                                            :desc, :feat, :disp, :st, NOW()
+                                            :desc, :feat, :disp, :st, CURRENT_TIMESTAMP
                                         )");
                 $stmt->execute([
                     ':cid'     => $categoryId ?: null,

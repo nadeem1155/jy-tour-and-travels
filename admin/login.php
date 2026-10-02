@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         $_SESSION['admin_role']     = $admin['role'];
 
                         // Update last login
-                        $upStmt = $pdo->prepare("UPDATE admins SET last_login = NOW() WHERE id = :id");
+                        $upStmt = $pdo->prepare("UPDATE admins SET last_login = CURRENT_TIMESTAMP WHERE id = :id");
                         $upStmt->execute([':id' => $admin['id']]);
 
                         set_flash('success', "Welcome back, {$admin['full_name']}!");

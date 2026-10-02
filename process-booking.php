@@ -123,7 +123,7 @@ if ($pdo) {
                 ) VALUES (
                     :booking_number, :full_name, :phone, :email, :pickup_location,
                     :destination, :travel_date, :return_date, :vehicle_id, :vehicle_name,
-                    :passengers, :trip_type, :additional_requirements, 'New', :ip_address, NOW()
+                    :passengers, :trip_type, :additional_requirements, 'New', :ip_address, CURRENT_TIMESTAMP
                 )";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([
