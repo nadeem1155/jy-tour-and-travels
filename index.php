@@ -3,6 +3,8 @@
  * JY TOUR and TRAVELS - Home Page
  * Complete, modern, responsive website based strictly on the provided advertisement
  */
+require_once __DIR__ . '/config/config.php';
+
 $pageTitle = get_setting('meta_title', 'JY TOUR and TRAVELS | Reliable Travel & Car Rental Services in Lucknow');
 $pageDesc  = get_setting('meta_description');
 $pageKeywords = get_setting('meta_keywords');
