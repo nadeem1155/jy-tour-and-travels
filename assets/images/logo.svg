@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" width="420" height="80" fill="none">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#F5A623" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="1" dy="2" stdDeviation="1.5" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Airplane Orbit Arc -->
+  <path d="M 68 18 C 92 18, 98 42, 60 62 C 22 72, 8 50, 18 28 C 24 16, 44 14, 62 16" 
+        stroke="url(#goldGrad)" stroke-width="4.5" stroke-linecap="round" fill="none" />
+
+  <!-- Airplane Icon at top right of arc -->
+  <g transform="translate(68, 12) rotate(35) scale(0.95)" fill="#F5A623">
+    <path d="M0 -12 L4 0 L15 3 L4 5 L3 12 L0 10 L-3 12 L-4 5 L-15 3 L-4 0 Z" />
+  </g>
+
+  <!-- Letters "JY" inside/beside the ring -->
+  <g font-family="Arial Black, Impact, sans-serif" font-weight="900" font-size="44" fill="url(#goldGrad)" letter-spacing="-1">
+    <text x="24" y="55">JY</text>
+  </g>
+
+  <!-- TOUR and TRAVELS Text -->
+  <g font-family="Arial Black, 'Montserrat', sans-serif" font-weight="900" letter-spacing="1">
+    <text x="108" y="44" font-size="28" fill="#111827">TOUR</text>
+    <text x="202" y="44" font-size="19" fill="#F5A623" font-weight="700">and</text>
+    <text x="248" y="44" font-size="28" fill="#111827">TRAVELS</text>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <rect x="108" y="52" width="290" height="3.5" rx="1.75" fill="url(#goldGrad)" />
+</svg>

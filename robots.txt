@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /config/
+Disallow: /database/
+Disallow: /install.php
+
+Sitemap: https://jytourandtravels.com/sitemap.xml
